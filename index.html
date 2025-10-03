@@ -4,31 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Keiner García Ortiz</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Keiner García Ortiz</h1>
-    <p>Estudiante de Tecnólogo en Análisis y Desarrollo de Software (SENA)</p>
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold glow-text" href="#">Keiner García Ortiz</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5 bg-gradient-primary">
+    <h1 class="display-4 fw-bold glow-text">Keiner García Ortiz</h1>
+    <p class="lead">Estudiante de Tecnólogo en Análisis y Desarrollo de Software (SENA)</p>
   </header>
-  
-  <section>
-    <h2>Sobre mí</h2>
-    <p>Soy apasionado por el desarrollo de software y bases de datos. Actualmente me encuentro en formación como tecnólogo en el SENA y he realizado un bootcamp de programación de 159 horas.</p>
-  </section>
 
-  <section>
-    <h2>Proyectos</h2>
-    <ul>
-      <li><b>Sistema de Gestión Académica</b> - Java + MySQL</li>
-      <li><b>Tienda Online</b> - PHP + HTML + CSS + JS</li>
-    </ul>
-  </section>
+  <main class="container my-5">
 
-  <section>
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:keinergarciaortiz@gmail.com">keinergarciaortiz@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/keinergarcia</a></p>
-  </section>
+    <!-- Sobre mí -->
+    <section class="mb-5">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="fs-5">Soy apasionado por el desarrollo de software y bases de datos. Actualmente me encuentro en formación como tecnólogo en el SENA y he realizado un bootcamp de programación de 159 horas.</p>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="mb-5">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Sistema de Gestión Académica</h5>
+              <p class="card-text">Aplicación para administrar cursos, estudiantes y calificaciones.</p>
+              <span class="badge bg-info text-dark">Java</span>
+              <span class="badge bg-info text-dark">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Tienda Online</h5>
+              <p class="card-text">Página web de comercio electrónico con carrito de compras.</p>
+              <span class="badge bg-info text-dark">PHP</span>
+              <span class="badge bg-info text-dark">HTML</span>
+              <span class="badge bg-info text-dark">CSS</span>
+              <span class="badge bg-info text-dark">JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section>
+      <h2 class="section-title">Contacto</h2>
+      <ul class="list-unstyled fs-5">
+        <li><b>Email:</b> <a href="mailto:keinergarciaortiz@gmail.com" class="text-info">keinergarciaortiz@gmail.com</a></li>
+        <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/keinergarcia" class="text-info">linkedin.com/in/keinergarcia</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Keiner García Ortiz | Portafolio</p>
+  </footer>
+
 </body>
 </html>
